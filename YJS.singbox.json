@@ -634,7 +634,27 @@
           "icloudnative.io",
           "fuckcloudnative.io",
           "sealos.io",
-          "cdn.jsdelivr.us"
+          "cdn.jsdelivr.us",
+        ],
+        "outbound": "direct"
+      },
+      {
+        "domain_suffix": [
+          "sing-box-subscribe-doraemon.vercel.app"
+        ],
+        "outbound": "Proxy"
+      },
+      {
+        "domain_suffix": [
+          "edu.cn",
+          "gov.cn",
+          "mil.cn",
+          "ac.cn",
+          "com.cn",
+          "net.cn",
+          "org.cn",
+          "中国",
+          "中國"
         ],
         "outbound": "direct"
       },
