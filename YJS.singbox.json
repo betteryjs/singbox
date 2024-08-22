@@ -85,7 +85,8 @@
           "fuckcloudnative.io",
           "sealos.io",
           "cdn.jsdelivr.us",
-          "www.cnblogs.com"
+          "www.cnblogs.com",
+          "filehelper.weixin.qq.com"
         ],
         "server": "dns_direct"
       },
@@ -640,7 +641,8 @@
           "fuckcloudnative.io",
           "sealos.io",
           "cdn.jsdelivr.us",
-          "www.cnblogs.com"
+          "www.cnblogs.com",
+          "filehelper.weixin.qq.com"
         ],
         "outbound": "direct"
       },
