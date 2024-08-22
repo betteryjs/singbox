@@ -622,6 +622,13 @@
         "download_detour": "Proxy",
         "tag": "geosite-disney",
         "url": "https://raw.githubusercontent.com/betteryjs/singbox/master/rule_set/geosite/disney.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "Proxy",
+        "tag": "geosite-microsoft",
+        "url": "https://raw.githubusercontent.com/betteryjs/singbox/master/rule_set/geosite/microsoft.srs"
       }
     ],
 
