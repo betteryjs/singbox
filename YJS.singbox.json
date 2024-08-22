@@ -638,7 +638,8 @@
           "icloudnative.io",
           "fuckcloudnative.io",
           "sealos.io",
-          "cdn.jsdelivr.us"
+          "cdn.jsdelivr.us",
+          "www.cnblogs.com"
         ],
         "outbound": "direct"
       },

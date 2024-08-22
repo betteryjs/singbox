@@ -22,11 +22,6 @@
     "interval": "30m0s",
     "detour": "direct"
   },
-
-
-
-
-
   "dns": {
     "servers": [
       {
@@ -384,7 +379,7 @@
       "outbounds": [
         "Proxy",
         "{all}",
-                "direct"
+        "direct"
       ],
       "filter": [
         {
@@ -439,15 +434,9 @@
       "type": "dns",
       "tag": "dns-out"
     }
-
   ],
-
-
-
   "route": {
     "rule_set": [
-
-
       {
         "type": "remote",
         "format": "binary",
@@ -631,7 +620,6 @@
         "url": "https://raw.githubusercontent.com/betteryjs/singbox/master/rule_set/geosite/microsoft.srs"
       }
     ],
-
     "rules": [
       {
         "protocol": "dns",
@@ -645,13 +633,13 @@
         "clash_mode": "global",
         "outbound": "Proxy"
       },
-
       {
         "domain_suffix": [
           "icloudnative.io",
           "fuckcloudnative.io",
           "sealos.io",
-          "cdn.jsdelivr.us"
+          "cdn.jsdelivr.us",
+          "www.cnblogs.com"
         ],
         "outbound": "direct"
       },
@@ -681,15 +669,10 @@
         "rule_set": "Global",
         "outbound": "Proxy"
       },
-
       {
         "ip_is_private": true,
         "outbound": "direct"
       },
-
-
-
-
       {
         "rule_set": "geosite-netflix",
         "outbound": "Netflix"
@@ -762,7 +745,6 @@
         "rule_set": "geosite-category-media",
         "outbound": "Proxy"
       },
-
       {
         "rule_set": [
           "GeoIP2-CN",
@@ -775,15 +757,9 @@
         ],
         "outbound": "direct"
       }
-
-
     ],
     "final": "direct",
     "find_process": true,
     "auto_detect_interface": true
   }
-
-
-
-
 }
