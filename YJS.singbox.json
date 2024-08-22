@@ -86,7 +86,8 @@
           "sealos.io",
           "cdn.jsdelivr.us",
           "www.cnblogs.com",
-          "filehelper.weixin.qq.com"
+          "filehelper.weixin.qq.com",
+          "www.baidu.com"
         ],
         "server": "dns_direct"
       },
@@ -662,7 +663,10 @@
           "net.cn",
           "org.cn",
           "中国",
-          "中國"
+          "中國",
+          "www.baidu.com",
+          "qq.com"
+
         ],
         "outbound": "direct"
       },

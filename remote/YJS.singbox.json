@@ -642,7 +642,7 @@
           "sealos.io",
           "cdn.jsdelivr.us",
           "www.cnblogs.com",
-          "filehelper.weixin.qq.com"
+          "www.baidu.com"
         ],
         "outbound": "direct"
       },
@@ -661,6 +661,29 @@
           "kubectl",
           "YunDetectService",
           "aDrive"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "domain_suffix": [
+          "sing-box-subscribe-doraemon.vercel.app"
+        ],
+        "outbound": "Proxy"
+      },
+      {
+        "domain_suffix": [
+          "edu.cn",
+          "gov.cn",
+          "mil.cn",
+          "ac.cn",
+          "com.cn",
+          "net.cn",
+          "org.cn",
+          "中国",
+          "中國",
+          "www.baidu.com",
+          "qq.com"
+
         ],
         "outbound": "direct"
       },
