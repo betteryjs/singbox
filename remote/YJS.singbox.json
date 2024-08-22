@@ -78,7 +78,9 @@
           "wireguard-go",
           "Tunnelblick",
           "softwareupdated",
-          "kubectl"
+          "kubectl",
+          "YunDetectService",
+          "aDrive"
         ],
         "server": "dns_direct"
       },
@@ -117,13 +119,21 @@
       },
       {
         "rule_set": [
-          "YouTube",
-          "Telegram",
-          "Netflix",
-          "geoip-google",
+          "geosite-netflix",
+          "geoip-netflix",
+          "geosite-youtube",
+          "geosite-telegram",
           "geoip-telegram",
-          "geoip-twitter",
-          "geoip-netflix"
+          "geosite-openai",
+          "geosite-github",
+          "geosite-jetbrains",
+          "geosite-spotify",
+          "geosite-cloudflare",
+          "geoip-cloudflare",
+          "geosite-google",
+          "geoip-google",
+          "geosite-disney",
+          "geosite-category-media"
         ],
         "server": "dns_proxy"
       }

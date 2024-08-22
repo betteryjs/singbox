@@ -22,11 +22,6 @@
     "interval": "30m0s",
     "detour": "direct"
   },
-
-
-
-
-
   "dns": {
     "servers": [
       {
@@ -78,7 +73,9 @@
           "wireguard-go",
           "Tunnelblick",
           "softwareupdated",
-          "kubectl"
+          "kubectl",
+          "YunDetectService",
+          "aDrive"
         ],
         "server": "dns_direct"
       },
@@ -117,13 +114,21 @@
       },
       {
         "rule_set": [
-          "YouTube",
-          "Telegram",
-          "Netflix",
-          "geoip-google",
+          "geosite-netflix",
+          "geoip-netflix",
+          "geosite-youtube",
+          "geosite-telegram",
           "geoip-telegram",
-          "geoip-twitter",
-          "geoip-netflix"
+          "geosite-openai",
+          "geosite-github",
+          "geosite-jetbrains",
+          "geosite-spotify",
+          "geosite-cloudflare",
+          "geoip-cloudflare",
+          "geosite-google",
+          "geoip-google",
+          "geosite-disney",
+          "geosite-category-media"
         ],
         "server": "dns_proxy"
       }
@@ -374,7 +379,7 @@
       "outbounds": [
         "Proxy",
         "{all}",
-                "direct"
+        "direct"
       ],
       "filter": [
         {
@@ -429,15 +434,9 @@
       "type": "dns",
       "tag": "dns-out"
     }
-
   ],
-
-
-
   "route": {
     "rule_set": [
-
-
       {
         "type": "remote",
         "format": "binary",
@@ -614,7 +613,6 @@
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/disney.srs"
       }
     ],
-
     "rules": [
       {
         "protocol": "dns",
@@ -628,13 +626,12 @@
         "clash_mode": "global",
         "outbound": "Proxy"
       },
-
       {
         "domain_suffix": [
           "icloudnative.io",
           "fuckcloudnative.io",
           "sealos.io",
-          "cdn.jsdelivr.us",
+          "cdn.jsdelivr.us"
         ],
         "outbound": "direct"
       },
@@ -684,15 +681,10 @@
         "rule_set": "Global",
         "outbound": "Proxy"
       },
-
       {
         "ip_is_private": true,
         "outbound": "direct"
       },
-
-
-
-
       {
         "rule_set": "geosite-netflix",
         "outbound": "Netflix"
@@ -765,7 +757,6 @@
         "rule_set": "geosite-category-media",
         "outbound": "Proxy"
       },
-
       {
         "rule_set": [
           "GeoIP2-CN",
@@ -778,15 +769,9 @@
         ],
         "outbound": "direct"
       }
-
-
     ],
     "final": "direct",
     "find_process": true,
     "auto_detect_interface": true
   }
-
-
-
-
 }
