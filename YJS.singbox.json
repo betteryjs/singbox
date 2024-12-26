@@ -87,7 +87,10 @@
           "cdn.jsdelivr.us",
           "www.cnblogs.com",
           "filehelper.weixin.qq.com",
-          "www.baidu.com"
+          "www.baidu.com",
+          "account.aliyun.com",
+          "aliyun.com"
+
         ],
         "server": "dns_direct"
       },

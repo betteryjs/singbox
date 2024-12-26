@@ -86,7 +86,10 @@
           "sealos.io",
           "cdn.jsdelivr.us",
           "www.cnblogs.com",
-          "filehelper.weixin.qq.com"
+          "filehelper.weixin.qq.com",
+          "micu.hk",
+          "tv.micu.hk",
+          "tv1.micu.hk"
         ],
         "server": "dns_direct"
       },
@@ -642,7 +645,11 @@
           "sealos.io",
           "cdn.jsdelivr.us",
           "www.cnblogs.com",
-          "www.baidu.com"
+          "www.baidu.com",
+          "micu.hk",
+          "tv.micu.hk",
+          "tv1.micu.hk"
+
         ],
         "outbound": "direct"
       },
@@ -683,7 +690,6 @@
           "中國",
           "www.baidu.com",
           "qq.com"
-
         ],
         "outbound": "direct"
       },
