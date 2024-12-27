@@ -93,22 +93,32 @@
       "tag": "dns-out"
     },
     {
+      "type": "selector",
+      "tag": "🚀 节点选择",
+      "outbounds": [
+        "♻️ 自动选择",
+        "🇺🇲 美国自动",
+        "🇭🇰 香港自动",
+        "🇨🇳 台湾自动",
+        "🇸🇬 狮城自动",
+        "🇯🇵 日本自动",
+        "🚀 手动切换1",
+        "DIRECT"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🚀 手动切换1",
+      "outbounds": [
+        "{all}"
+      ]
+    },
+    {
       "type": "urltest",
       "tag": "♻️ 自动选择",
       "outbounds": [
-        "🇭🇰 HK[400M]AliCloud",
-        "🇭🇰 HK[500M]Dmit-IEPL",
-        "🇭🇰 HK[400M]AliCloud-IEPL",
-        "🇭🇰 HK[100M]Dmit-IPLC2",
-        "🇭🇰 HK[100M]AliCloud-IPLC2",
-        "🇭🇰 HK[200M]Dmit-GGY-IPLC",
-        "🇭🇰 HK[200M]AliCloud-GGY-IPLC",
-        "🇭🇰 HK[1G]Dmit-IEPL-SZCT",
-        "🇭🇰 HK[400M]AliCloud-IEPL-SZCT",
-        "🇭🇰 HK[1G]Dmit-IEPL-SZCM",
-        "🇭🇰 HK[400M]AliCloud-IEPL-SZCM",
-        "🇭🇰 HK[500M]Dmit-IEPL-BGP",
-        "🇭🇰 HK[400M]AliCloud-IEPL-BGP"
+               "{all}"
+
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "5m",
@@ -196,7 +206,8 @@
         "🇸🇬 狮城自动",
         "🇯🇵 日本自动",
         "🚀 手动切换1",
-        "{all}"
+                "{all}"
+
       ]
     },
     {
@@ -220,23 +231,15 @@
         "🇸🇬 狮城自动",
         "🇯🇵 日本自动",
         "🚀 手动切换1",
-        "{all}"
+                "{all}"
+
       ]
     },
     {
       "type": "urltest",
       "tag": "🇺🇲 美国自动",
       "outbounds": [
-        "DIRECT",
-        "{all}"
-      ],
-      "filter": [
-        {
-          "action": "exclude",
-          "keywords": [
-            "HK"
-          ]
-        }
+        "DIRECT"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "5m",
@@ -246,16 +249,8 @@
       "type": "urltest",
       "tag": "🇭🇰 香港自动",
       "outbounds": [
-        "DIRECT",
-       "{all}"
-      ],
-      "filter": [
-        {
-          "action": "exclude",
-          "keywords": [
-            "HK"
-          ]
-        }
+               "{all}"
+
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "5m",
@@ -265,18 +260,8 @@
       "type": "urltest",
       "tag": "🇨🇳 台湾自动",
       "outbounds": [
-        "DIRECT",
-        "{all}"
+        "DIRECT"
       ],
-            "filter": [
-        {
-          "action": "exclude",
-          "keywords": [
-            "TW"
-          ]
-        }
-      ],
-
       "url": "http://www.gstatic.com/generate_204",
       "interval": "5m",
       "tolerance": 150
@@ -285,18 +270,8 @@
       "type": "urltest",
       "tag": "🇸🇬 狮城自动",
       "outbounds": [
-        "DIRECT",
-        "{all}"
+        "DIRECT"
       ],
-            "filter": [
-        {
-          "action": "exclude",
-          "keywords": [
-            "HK"
-          ]
-        }
-      ],
-
       "url": "http://www.gstatic.com/generate_204",
       "interval": "5m",
       "tolerance": 150
@@ -305,18 +280,8 @@
       "type": "urltest",
       "tag": "🇯🇵 日本自动",
       "outbounds": [
-        "DIRECT",
-        "{all}"
+        "DIRECT"
       ],
-            "filter": [
-        {
-          "action": "exclude",
-          "keywords": [
-            "HK"
-          ]
-        }
-      ],
-
       "url": "http://www.gstatic.com/generate_204",
       "interval": "5m",
       "tolerance": 150
@@ -326,7 +291,8 @@
       "tag": "GLOBAL",
       "outbounds": [
         "DIRECT",
-       "{all}"
+               "{all}"
+
       ]
     }
   ],
