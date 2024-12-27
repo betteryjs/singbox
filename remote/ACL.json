@@ -357,7 +357,12 @@
           "googletraveladservices.com",
           "tracking-protection.cdn.mozilla.net",
           "koodomobile.com",
-          "koodomobile.ca"
+          "koodomobile.ca",
+          "aliyun.com",
+          "micu.hk",
+          "tv.micu.hk",
+          "tv0.micu.hk",
+          "tv1.micu.hk"
         ],
         "domain": [
           "dl.google.com",
